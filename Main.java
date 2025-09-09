@@ -28,7 +28,7 @@ public class Main {
     {
         System.out.println("Veuillez saisir un entier");
         Scanner sc = new Scanner(System.in);
-        return sc.nextInt();
+        return sc.nextDouble();
     }
 
     static void verifierSaisie3(){
