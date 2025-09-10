@@ -1,12 +1,12 @@
-import partieInitiation2.Initiation;
+import partieInitiation2.Jours2.Jours2;
 
 public class Main {
     
     public static void main(String[] args) 
     {
-        
-        Initiation i = new Initiation();
-        
+        Jours2 jours2 = new Jours2();
+        jours2.day00();
+    
     }
     
 }

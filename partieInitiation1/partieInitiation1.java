@@ -1,7 +1,7 @@
 import java.util.Random;
 import java.util.Scanner;
 
-public class Main {
+public class partieInitiation1 {
     //2
     public static int age0()
     {
@@ -558,7 +558,7 @@ public class Main {
     }
 
 
-    public static void main(String[] args) {
+    /* public static void main(String[] args) {
         
         //Exo1 
         //String unMot="Bonjour";
@@ -579,7 +579,7 @@ public class Main {
 
         //decalages1();
         //sc.close();
-        codageVigenere("VIGENERE");
-    }
+        //codageVigenere("VIGENERE");
+    } */
     
 }
