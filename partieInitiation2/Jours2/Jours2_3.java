@@ -41,7 +41,6 @@ public class Jours2_3 {
         if(cote1<cote2) min=cote1;
         else min=cote2;
         if(min>cote3) min=cote3;
-        //System.out.println(cote1+" "+cote2+" "+cote3+" "+min);
         return 2*cote1+2*cote2+2*cote3 + min;
     }
 
