@@ -5,30 +5,25 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class Jours2 {
+public class Jours2_2 {
     
     private final String PATH_DATA = "partieInitiation2" + File.separator + "src" + File.separator + "data" + File.separator;
-
-    private int typeDejeu(char chaine) {
-        if(chaine=='A' || chaine=='X') return 1;
-        else if(chaine=='B' || chaine=='Y') return 2;
-        else if(chaine=='C' || chaine=='Z') return 3;
-        else return 0;
-    }
-    
     private String attributPointMoi(String chaine) {
         if(chaine.length()>=3) {
-            int adversaire = typeDejeu(chaine.charAt(0));
-            int moi = typeDejeu(chaine.charAt(2));                                                   
-            if(moi==adversaire && moi==1) return "Match Nul1";
-            else if(moi==adversaire && moi==2) return "Match Nul2";
-            else if(moi==adversaire && moi==3) return "Match Nul3";
-            else if(adversaire==1 && moi==2) return "Victoire2"; //rock paper
-            else if(adversaire==2 && moi==3) return "Victoire3"; //paper scissors
-            else if(adversaire==3 && moi==1) return "Victoire1"; //scissors rock
-            else if(adversaire==2 && moi==1) return "Defaite1"; //paper rock
-            else if(adversaire==3 && moi==2) return "Defaite2"; //scissors paper
-            else if(adversaire==1 && moi==3) return "Defaite3"; //rock scissors
+            char adversaire = chaine.charAt(0);
+            char moi = chaine.charAt(2); 
+            if(adversaire=='A' && moi=='X') return "Defaite3"; //Rock ciseau
+            else if(adversaire=='A' && moi=='Y') return "Match Nul1";// Rock rock
+            else if(adversaire=='A' && moi=='Z') return "Victoire2";// Rock papier
+            
+            else if(adversaire=='B' && moi=='X') return "Defaite1"; //papier rock
+            else if(adversaire=='B' && moi=='Y') return "Match Nul2"; //papier papier
+            else if(adversaire=='B' && moi=='Z') return "Victoire3"; //papier ciseau
+            
+            else if(adversaire=='C' && moi=='X') return "Defaite2"; //ciseau papier
+            else if(adversaire=='C' && moi=='Y') return "Match Nul3"; //ciseau ciseau
+            else if(adversaire=='C' && moi=='Z') return "Victoire1"; //ciseau rock
+            
             else return "ERREUR"; 
         }
         else return "ERREUR";

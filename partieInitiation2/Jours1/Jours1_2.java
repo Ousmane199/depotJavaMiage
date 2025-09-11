@@ -66,7 +66,7 @@ public class Jours1_2 {
  
 
     public void day00() {
-        String fichier = "day00.txt";
+        String fichier = "day1.txt";
         int tmp=0;
         try (Scanner scanner = new Scanner(new FileInputStream(PATH_DATA + fichier))) { // On essaye d'ouvrir le fichier
 

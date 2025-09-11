@@ -513,7 +513,7 @@ public class partieInitiation1 {
     static void codageVigenere(String cle)
     {
         String chaine= saisieChaine();
-        int positionCle=cle.charAt(0);
+        int positionCle=cle.charAt(0);//On recupere le chiffre de la cle
         char[] tabChaine=chaine.toCharArray();
         String nouvelleChaine="";
         for(int i=0;i<tabChaine.length;i++)

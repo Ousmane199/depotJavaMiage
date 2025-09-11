@@ -31,14 +31,14 @@ public class Jours1 {
  
 
     public void day00() {
-        String fichier = "day00.txt";
+        String fichier = "day1.txt";
         int tmp=0;
         int max=0;
         try (Scanner scanner = new Scanner(new FileInputStream(PATH_DATA + fichier))) { // On essaye d'ouvrir le fichier
 
             while (scanner.hasNextLine()) {// On lit le fichier ligne par ligne 
                 String ch = scanner.nextLine().trim();
-                if(ch.isEmpty()) {
+                if(ch.isEmpty()) { // if(ch=="")
                     if(tmp>max) max=tmp;
                     tmp=0;
                 }
